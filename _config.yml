@@ -1,2 +1,3 @@
 name: Transfer99, simple file transfer web site
-	markdown: kramdown
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
