@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <CARPARK NAME="Car Park" SHOWLABELS="TRUE" MIMICWINDOWX="896" MIMICWINDOWY="51" MIMICWINDOWW="431" MIMICWINDOWH="344" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="160" Y="56">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="160" Y="68" />
+          <VERTEX X="160" Y="200" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="1" X="160" Y="224">
+        <SYMBOLDATA LEFT="Car Park.In Sw" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="13">
+          <VERTEX X="160" Y="248" />
+          <VERTEX X="160" Y="312" />
+        </LINEYES>
+        <LINENO TO_ID="1">
+          <VERTEX X="220" Y="224" />
+          <VERTEX X="232" Y="224" />
+          <VERTEX X="232" Y="188" />
+          <VERTEX X="160" Y="188" />
+          <VERTEX X="160" Y="200" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <DECISION_SYMBOL ID="2" X="160" Y="476">
+        <SYMBOLDATA LEFT="Car Park.In Pad" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="14">
+          <VERTEX X="160" Y="500" />
+          <VERTEX X="160" Y="592" />
+        </LINEYES>
+        <LINENO TO_ID="2">
+          <VERTEX X="220" Y="476" />
+          <VERTEX X="232" Y="476" />
+          <VERTEX X="232" Y="440" />
+          <VERTEX X="160" Y="440" />
+          <VERTEX X="160" Y="452" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <STARTSUB_SYMBOL ID="3" X="608" Y="56">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="in barrier up" />
+        <LINE TO_ID="4">
+          <VERTEX X="608" Y="68" />
+          <VERTEX X="608" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="4" X="608" Y="168">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Forward" />
+        </SYMBOLDATA>
+        <LINE TO_ID="5">
+          <VERTEX X="608" Y="192" />
+          <VERTEX X="608" Y="256" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="5" X="608" Y="280">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="6">
+          <VERTEX X="608" Y="304" />
+          <VERTEX X="608" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="6" X="608" Y="392">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Off" />
+        </SYMBOLDATA>
+        <LINE TO_ID="7">
+          <VERTEX X="608" Y="416" />
+          <VERTEX X="608" Y="464" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="7" X="608" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="8" X="768" Y="56">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="in barrier down" />
+        <LINE TO_ID="10">
+          <VERTEX X="768" Y="68" />
+          <VERTEX X="768" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DELAY_SYMBOL ID="9" X="768" Y="280">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="11">
+          <VERTEX X="768" Y="304" />
+          <VERTEX X="768" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="10" X="768" Y="168">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Reverse" />
+        </SYMBOLDATA>
+        <LINE TO_ID="9">
+          <VERTEX X="768" Y="192" />
+          <VERTEX X="768" Y="256" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <OUTPUT_SYMBOL ID="11" X="768" Y="392">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Off" />
+        </SYMBOLDATA>
+        <LINE TO_ID="12">
+          <VERTEX X="768" Y="416" />
+          <VERTEX X="768" Y="464" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="12" X="768" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <CALLSUB_SYMBOL ID="13" X="160" Y="336">
+        <SYMBOLDATA SUBNAME="in barrier up" SUBMULTIPLIER="1" />
+        <LINE TO_ID="2">
+          <VERTEX X="160" Y="360" />
+          <VERTEX X="160" Y="452" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <CALLSUB_SYMBOL ID="14" X="160" Y="616">
+        <SYMBOLDATA SUBNAME="in barrier down" SUBMULTIPLIER="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="160" Y="640" />
+          <VERTEX X="160" Y="652" />
+          <VERTEX X="88" Y="652" />
+          <VERTEX X="88" Y="224" />
+          <VERTEX X="100" Y="224" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="15" X="448" Y="56">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="out barrier up" />
+        <LINE TO_ID="16">
+          <VERTEX X="448" Y="68" />
+          <VERTEX X="448" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="16" X="448" Y="168">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.Out Barrier" NEWDIRECTION="Forward" />
+        </SYMBOLDATA>
+        <LINE TO_ID="17">
+          <VERTEX X="448" Y="192" />
+          <VERTEX X="448" Y="256" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="17" X="448" Y="280">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="18">
+          <VERTEX X="448" Y="304" />
+          <VERTEX X="448" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="18" X="448" Y="392">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.Out Barrier" NEWDIRECTION="Off" />
+        </SYMBOLDATA>
+        <LINE TO_ID="19">
+          <VERTEX X="448" Y="416" />
+          <VERTEX X="448" Y="464" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="19" X="448" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="20" X="320" Y="56">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="out barrier down" />
+        <LINE TO_ID="21">
+          <VERTEX X="320" Y="68" />
+          <VERTEX X="320" Y="144" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="21" X="320" Y="168">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.Out Barrier" NEWDIRECTION="Reverse" />
+        </SYMBOLDATA>
+        <LINE TO_ID="22">
+          <VERTEX X="320" Y="192" />
+          <VERTEX X="320" Y="256" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="22" X="320" Y="280">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="23">
+          <VERTEX X="320" Y="304" />
+          <VERTEX X="320" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="23" X="320" Y="392">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.Out Barrier" NEWDIRECTION="Off" />
+        </SYMBOLDATA>
+        <LINE TO_ID="24">
+          <VERTEX X="320" Y="416" />
+          <VERTEX X="320" Y="464" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <STARTSUB_SYMBOL ID="24" X="320" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="25" X="320" Y="560">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="2" />
+        <LINE TO_ID="26">
+          <VERTEX X="320" Y="572" />
+          <VERTEX X="320" Y="620" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="26" X="320" Y="644">
+        <SYMBOLDATA LEFT="Car Park.Out Sw" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="27">
+          <VERTEX X="380" Y="644" />
+          <VERTEX X="432" Y="644" />
+        </LINEYES>
+        <LINENO TO_ID="26">
+          <VERTEX X="320" Y="668" />
+          <VERTEX X="320" Y="680" />
+          <VERTEX X="248" Y="680" />
+          <VERTEX X="248" Y="608" />
+          <VERTEX X="320" Y="608" />
+          <VERTEX X="320" Y="620" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <CALLSUB_SYMBOL ID="27" X="480" Y="644">
+        <SYMBOLDATA SUBNAME="out barrier up" SUBMULTIPLIER="1" />
+        <LINE TO_ID="28">
+          <VERTEX X="528" Y="644" />
+          <VERTEX X="580" Y="644" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <DECISION_SYMBOL ID="28" X="640" Y="644">
+        <SYMBOLDATA LEFT="Car Park.Out Pad" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="29">
+          <VERTEX X="700" Y="644" />
+          <VERTEX X="752" Y="644" />
+        </LINEYES>
+        <LINENO TO_ID="28">
+          <VERTEX X="640" Y="668" />
+          <VERTEX X="640" Y="680" />
+          <VERTEX X="568" Y="680" />
+          <VERTEX X="568" Y="644" />
+          <VERTEX X="580" Y="644" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <CALLSUB_SYMBOL ID="29" X="800" Y="644">
+        <SYMBOLDATA SUBNAME="out barrier down" SUBMULTIPLIER="1" />
+        <LINE TO_ID="26">
+          <VERTEX X="848" Y="644" />
+          <VERTEX X="860" Y="644" />
+          <VERTEX X="860" Y="608" />
+          <VERTEX X="320" Y="608" />
+          <VERTEX X="320" Y="620" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>

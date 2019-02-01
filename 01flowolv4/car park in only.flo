@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <CARPARK NAME="Car Park" SHOWLABELS="TRUE" MIMICWINDOWX="639" MIMICWINDOWY="79" MIMICWINDOWW="591" MIMICWINDOWH="472" />
+  </LINKERMODULE>
+  <MODULES />
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="160" Y="56">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="2">
+          <VERTEX X="160" Y="68" />
+          <VERTEX X="160" Y="116" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <DECISION_SYMBOL ID="1" X="160" Y="224">
+        <SYMBOLDATA LEFT="Car Park.In Sw" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="3">
+          <VERTEX X="160" Y="248" />
+          <VERTEX X="160" Y="284" />
+        </LINEYES>
+        <LINENO TO_ID="2">
+          <VERTEX X="220" Y="224" />
+          <VERTEX X="232" Y="224" />
+          <VERTEX X="232" Y="104" />
+          <VERTEX X="160" Y="104" />
+          <VERTEX X="160" Y="116" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <DELAY_SYMBOL ID="2" X="160" Y="140">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="1">
+          <VERTEX X="160" Y="164" />
+          <VERTEX X="160" Y="200" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="160" Y="308">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Forward" />
+        </SYMBOLDATA>
+        <LINE TO_ID="5">
+          <VERTEX X="160" Y="332" />
+          <VERTEX X="160" Y="368" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DECISION_SYMBOL ID="4" X="160" Y="476">
+        <SYMBOLDATA LEFT="Car Park.In Pad" RIGHT=".StateConstant.TRUE" OP="IsEqualTo" />
+        <LINEYES TO_ID="6">
+          <VERTEX X="160" Y="500" />
+          <VERTEX X="160" Y="536" />
+        </LINEYES>
+        <LINENO TO_ID="5">
+          <VERTEX X="220" Y="476" />
+          <VERTEX X="232" Y="476" />
+          <VERTEX X="232" Y="356" />
+          <VERTEX X="160" Y="356" />
+          <VERTEX X="160" Y="368" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <DELAY_SYMBOL ID="5" X="160" Y="392">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="4">
+          <VERTEX X="160" Y="416" />
+          <VERTEX X="160" Y="452" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <DELAY_SYMBOL ID="6" X="160" Y="560">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="7">
+          <VERTEX X="160" Y="584" />
+          <VERTEX X="160" Y="620" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <DECISION_SYMBOL ID="7" X="160" Y="644">
+        <SYMBOLDATA LEFT="Car Park.In Pad" RIGHT=".StateConstant.FALSE" OP="IsEqualTo" />
+        <LINEYES TO_ID="9">
+          <VERTEX X="160" Y="668" />
+          <VERTEX X="160" Y="680" />
+          <VERTEX X="238" Y="680" />
+          <VERTEX X="238" Y="140" />
+          <VERTEX X="336" Y="140" />
+        </LINEYES>
+        <LINENO TO_ID="6">
+          <VERTEX X="220" Y="644" />
+          <VERTEX X="232" Y="644" />
+          <VERTEX X="232" Y="524" />
+          <VERTEX X="160" Y="524" />
+          <VERTEX X="160" Y="536" />
+        </LINENO>
+      </DECISION_SYMBOL>
+      <OUTPUT_SYMBOL ID="8" X="384" Y="224">
+        <SYMBOLDATA>
+          <MOTORWITHPOWER_ACTION MOTOR="Car Park.In Barrier" NEWDIRECTION="Reverse" />
+        </SYMBOLDATA>
+        <LINE TO_ID="2">
+          <VERTEX X="432" Y="224" />
+          <VERTEX X="456" Y="224" />
+          <VERTEX X="456" Y="104" />
+          <VERTEX X="160" Y="104" />
+          <VERTEX X="160" Y="116" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="9" X="384" Y="140">
+        <SYMBOLDATA DELAY=".RealConstant.1.00000000" />
+        <LINE TO_ID="8">
+          <VERTEX X="384" Y="164" />
+          <VERTEX X="384" Y="200" />
+        </LINE>
+      </DELAY_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>
