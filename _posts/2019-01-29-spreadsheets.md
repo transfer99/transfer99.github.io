@@ -8,9 +8,11 @@ date: 2019-01-29
 ![Alt textl]({{ site.baseurl }}/02spreadsheets/fruitboxnograph.jpg "Fruit box completed but no graph")
 
 <P>For Chrome use Right Hand Mouse Button and select "save link as".<BR />
-<img src = "{{ site.baseurl }}/01flowolv4/chromesaveas.jpg"  width="150" height="150" /> using Chrome Save As <br />
+<img src = "{{ site.baseurl }}/01flowolv4/chromesaveas.jpg"  width="150" height="150" /> using Chrome Save As <br /> <br />
+You may get a Restriction message similar to this, if so simply press OK and carry on
+<img src = "{{ site.baseurl }}/55general/nosaveerror.jpg"   /> possible restriction save you may get<br /> <br /> <br />
 Then find the folder you wish to download to and then press "Save" <br />
-<img src = "{{ site.baseurl }}/01flowolv4/chromefilesave.jpg"  width="250" height="250" /> using Chrome File Save<br />
+<img src = "{{ site.baseurl }}/01flowolv4/chromefilesave.jpg"  width="250" height="250" /> using Chrome File Save<br /> <br />
 </P>
 ### download links below (lesson 4)
 1. Fruit box completed but no graph [Fruit box completed but no graph]({{site.baseurl}}/02spreadsheets/Fruit Box no graph.xlsx "Fruit box completed but no graph")

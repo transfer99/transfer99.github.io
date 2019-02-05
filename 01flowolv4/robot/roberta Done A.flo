@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FLOWCHART VERSION="4.00" NUMPRINTEDPAGESWIDE="2" NUMPRINTEDPAGESHIGH="2" PRINTEDPAGEWIDTH="720" PRINTEDPAGEHEIGHT="960" REDUCETOSINGLEPRINTEDPAGE="TRUE" SHOWBOUNDARIES="FALSE">
+  <LINKERMODULE>
+    <Robot NAME="Robot" SHOWLABELS="FALSE" MIMICWINDOWX="756" MIMICWINDOWY="79" MIMICWINDOWW="400" MIMICWINDOWH="320" />
+  </LINKERMODULE>
+  <MODULES>
+    <SOUND NAME="Sound and Speech" />
+  </MODULES>
+  <PAGE>
+    <SYMBOLS>
+      <STARTSUB_SYMBOL ID="0" X="128" Y="56">
+        <SYMBOLDATA TYPE="STARTTHREAD" THREADNAME="1" />
+        <LINE TO_ID="1">
+          <VERTEX X="128" Y="68" />
+          <VERTEX X="128" Y="116" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <SOUND_SYMBOL ID="1" X="128" Y="140">
+        <SYMBOLDATA SPEECHTEXT="hello my name is robbie" />
+        <LINE TO_ID="8">
+          <VERTEX X="128" Y="164" />
+          <VERTEX X="128" Y="200" />
+        </LINE>
+      </SOUND_SYMBOL>
+      <STARTSUB_SYMBOL ID="2" X="320" Y="56">
+        <SYMBOLDATA TYPE="STARTSUB" SUBNAME="move mouth" />
+        <LINE TO_ID="3">
+          <VERTEX X="320" Y="68" />
+          <VERTEX X="320" Y="116" />
+        </LINE>
+      </STARTSUB_SYMBOL>
+      <OUTPUT_SYMBOL ID="3" X="320" Y="140">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Robot.Mouth" NEWSTATE="TRUE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="4">
+          <VERTEX X="320" Y="164" />
+          <VERTEX X="320" Y="200" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="4" X="320" Y="224">
+        <SYMBOLDATA DELAY=".RealConstant.0.10000000" />
+        <LINE TO_ID="5">
+          <VERTEX X="320" Y="248" />
+          <VERTEX X="320" Y="284" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <OUTPUT_SYMBOL ID="5" X="320" Y="308">
+        <SYMBOLDATA>
+          <OUTPUT_ACTION OUTPUT="Robot.Mouth" NEWSTATE="FALSE" />
+        </SYMBOLDATA>
+        <LINE TO_ID="6">
+          <VERTEX X="320" Y="332" />
+          <VERTEX X="320" Y="368" />
+        </LINE>
+      </OUTPUT_SYMBOL>
+      <DELAY_SYMBOL ID="6" X="320" Y="392">
+        <SYMBOLDATA DELAY=".RealConstant.0.10000000" />
+        <LINE TO_ID="7">
+          <VERTEX X="320" Y="416" />
+          <VERTEX X="320" Y="464" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <STARTSUB_SYMBOL ID="7" X="320" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+      <CALLSUB_SYMBOL ID="8" X="128" Y="224">
+        <SYMBOLDATA SUBNAME="move mouth" SUBMULTIPLIER="1" />
+      </CALLSUB_SYMBOL>
+      <DELAY_SYMBOL ID="9" X="128" Y="308">
+        <SYMBOLDATA DELAY=".RealConstant.0.50000000" />
+        <LINE TO_ID="10">
+          <VERTEX X="128" Y="332" />
+          <VERTEX X="128" Y="368" />
+        </LINE>
+      </DELAY_SYMBOL>
+      <CALLSUB_SYMBOL ID="10" X="128" Y="392">
+        <SYMBOLDATA SUBNAME="move mouth" SUBMULTIPLIER="4" />
+        <LINE TO_ID="11">
+          <VERTEX X="128" Y="416" />
+          <VERTEX X="128" Y="464" />
+        </LINE>
+      </CALLSUB_SYMBOL>
+      <STARTSUB_SYMBOL ID="11" X="128" Y="476">
+        <SYMBOLDATA TYPE="STOP" />
+      </STARTSUB_SYMBOL>
+    </SYMBOLS>
+    <LABELS />
+  </PAGE>
+</FLOWCHART>
