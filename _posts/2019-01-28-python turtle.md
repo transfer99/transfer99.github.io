@@ -13,6 +13,9 @@ You may get a Restriction message similar to this, if so simply press OK and car
 Then find the folder you wish to download to and then press "Save" <br />
 <img src = "{{ site.baseurl }}/01flowolv4/chromefilesave.jpg"  width="250" height="250" /> using Chrome File Save<br /> <br />
 </P>
+## **General Reference Downloads**
+* Cheat [sheet]({{site.baseurl}}/03turtlepython/Python_Turtle_cheat_sheets.pdf) 1
+* Cheat [sheet]({{site.baseurl}}/03turtlepython/Turtle T3 CheatSheet.pdf) 2
 
 ## **Lesson 1 Downloads INTRO**
 ![Alt textl]({{ site.baseurl }}/03turtlepython/L1eg0.jpg)
@@ -31,3 +34,12 @@ Then find the folder you wish to download to and then press "Save" <br />
 1. Challenge 3  [polygon function]({{site.baseurl}}/03turtlepython/l2 3 polygon.py) with parameters
 1. Challenge 4  [Row of Houses]({{site.baseurl}}/03turtlepython/l2 4a  row of houses.py) 
 1. Challenge 4  [Row of Houses]({{site.baseurl}}/03turtlepython/l2 4b  row of houses with random.py) using Random size and function 
+## **Lesson 3 Downloads BEAUTIFUL SPIRALS**
+![Alt textl]({{ site.baseurl }}/03turtlepython/L3eg0.jpg)
+
+### download links below (lesson 3)
+1. Challenge 1 [Square]({{site.baseurl}}/03turtlepython/l3 c1 squarespiral.py) Spiral
+1. Challenge 2 [quirky]({{site.baseurl}}/03turtlepython/l3 c2 quirkyspiral.py) spiral
+1. Challenge 3  [star]({{site.baseurl}}/03turtlepython/l3 c3 star.py) with 
+1. Challenge 4  [star ]({{site.baseurl}}/03turtlepython/l3 c4 star function.py) function 
+
