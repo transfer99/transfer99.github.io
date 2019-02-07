@@ -40,6 +40,8 @@ Then find the folder you wish to download to and then press "Save" <br />
 ### download links below (lesson 3)
 1. Challenge 1 [Square]({{site.baseurl}}/03turtlepython/l3 c1 squarespiral.py) Spiral
 1. Challenge 2 [quirky]({{site.baseurl}}/03turtlepython/l3 c2 quirkyspiral.py) spiral
-1. Challenge 3  [star]({{site.baseurl}}/03turtlepython/l3 c3 star.py) with 
-1. Challenge 4  [star ]({{site.baseurl}}/03turtlepython/l3 c4 star function.py) function 
+1. Challenge 3  [star]({{site.baseurl}}/03turtlepython/l3 c3 star.py) 
+1. Challenge 4  [star ]({{site.baseurl}}/03turtlepython/l3 c4 star function.py)  with function 
+1. Challenge 5  [star]({{site.baseurl}}/03turtlepython/l3 c5 star spiral.py)  spiral
+1. Challenge 5  [quirky star]({{site.baseurl}}/03turtlepython/l3 c5 star spiral quirky.py)  spiral
 
