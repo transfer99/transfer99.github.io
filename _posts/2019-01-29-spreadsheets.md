@@ -22,6 +22,7 @@ Then find the folder you wish to download to and then press "Save" <br />
 ![Alt textl]({{ site.baseurl }}/02spreadsheets/discomodel.jpg "disco model")
 ### download links below (lesson 5)
 1. Party Food part completed [Party Food part completed]({{site.baseurl}}/02spreadsheets/Party Food A email out.xlsx "Party Food part completed")
+1. Party Food part completed [and cost per person]({{site.baseurl}}/02spreadsheets/Party Food A email out most done.xlsx ) completed
 
 ## **Lesson 6 Downloads**
 ![Alt textl]({{ site.baseurl }}/02spreadsheets/L6instructions.jpg "instructions")
