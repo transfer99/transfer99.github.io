@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Python Turtle"
-date: 2019-01-28
+title: "Python Turtle DKI"
+date: 2019-01-27
 ---
 ## **Downloads - General**
 
@@ -23,17 +23,14 @@ Then find the folder you wish to download to and then press "Save" <br />
 ### download links below (lesson 1)
 1. Challenge 1 [square]({{site.baseurl}}/03turtlepython/l1  0 basic square.py)
 1. Challenge 2 a more [efficient square]({{site.baseurl}}/03turtlepython/l1  1  eff square.py)
-1. Challenge 3 experiment [pattern]({{site.baseurl}}/03turtlepython/l1 2 basic pattern.py) example
+1. Create a  [shape]({{site.baseurl}}/03turtlepython/l1  1 basic square function.py) square as a function
 
-## **Lesson 2 Downloads  SHAPES**
-![Alt textl]({{ site.baseurl }}/03turtlepython/L2eg0.jpg)
+## ** download links below (Lesson 1 Ext) **
+1. Create a [pattern]({{site.baseurl}}/03turtlepython/l1 2 basic pattern.py)
+1. Challenge 3 [parameter]({{site.baseurl}}/03turtlepython/2 l1 c3 pattern  ask input params.py) function
+1. Challenge 4 [example pattern]({{site.baseurl}}/03turtlepython/2 l1 c4 pattern.py) 
 
-### download links below (lesson 2)
-1. Challenge 1 [Triangle]({{site.baseurl}}/03turtlepython/l2 1 triangle def.py) function
-1. Challenge 2 [Pentagon and Hexagon]({{site.baseurl}}/03turtlepython/l2 2 pentagon hexagon.py) function
-1. Challenge 3  [polygon function]({{site.baseurl}}/03turtlepython/l2 3 polygon.py) with parameters
-1. Challenge 4  [Row of Houses]({{site.baseurl}}/03turtlepython/l2 4a  row of houses.py) 
-1. Challenge 4  [Row of Houses]({{site.baseurl}}/03turtlepython/l2 4b  row of houses with random.py) using Random size and function 
+
 ## **Lesson 3 Downloads BEAUTIFUL SPIRALS**
 ![Alt textl]({{ site.baseurl }}/03turtlepython/L3eg0.jpg)
 
